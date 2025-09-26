@@ -1,0 +1,13 @@
+torch
+fastapi
+uvicorn[standard]
+huggingface_hub
+albumentations
+transformers
+scikit-learn
+unidecode
+nltk
+timm
+faiss-cpu
+hf-xet
+git+https://github.com/Anirban0011/shopee-product-matching.git
