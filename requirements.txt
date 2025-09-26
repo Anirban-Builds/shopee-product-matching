@@ -10,4 +10,5 @@ nltk
 timm
 faiss-cpu
 hf-xet
+gradio
 git+https://github.com/Anirban0011/shopee-product-matching.git
