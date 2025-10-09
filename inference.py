@@ -48,7 +48,7 @@ def inference(li, lt, IMG_SIZE,
 
     print(match_final)
 
-    assert len(match_final == 2)
+    assert len(match_final) == 2
 
     return set(match_final[0]) == set(match_final[1])
 
