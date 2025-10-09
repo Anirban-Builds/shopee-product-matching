@@ -28,8 +28,8 @@ def get_matches(bs, n_batch, feas, dim, k=51):
     for batch in get_batches(bs, n_batch, feas):
         batch = batch.to(CFG.device)
         sims, matches = index.search(batch, k)
-        m.append(matches)
-        s.append(sims)
+        m.append(torch.tensor(matches))
+        s.append(torch.tensor(sims))
     m = torch.cat(m, dim=0).to(torch.int32)
     s = torch.cat(s, dim=0)
     return m,s
