@@ -46,6 +46,8 @@ def inference(li, lt, IMG_SIZE,
 
     match_final = filter_match_titles(match_final, title_list=lt)
 
+    print(match_final)
+
     assert len(match_final == 2)
 
     return set(match_final[0]) == set(match_final[1])
