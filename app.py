@@ -7,7 +7,7 @@ nltk.download("stopwords")
 import numpy as np
 from typing import List
 from inference import inference
-from code_base.utils import CFG
+from main_folder.code_base.utils import CFG
 
 TKN_PATH= ["bert-base-uncased"]
 IMG_SIZE = 256
