@@ -9,7 +9,7 @@ ENV PATH="/home/user/.local/bin:$PATH"
 
 WORKDIR /app
 
-COPY --chown=user ./requirements.txt requirements.txt
+COPY --chown=user ./requirements/requirements.txt requirements/requirements.txt
 RUN pip install --no-cache-dir --upgrade -r ./requirements/requirements.txt
 
 COPY --chown=user . /app
