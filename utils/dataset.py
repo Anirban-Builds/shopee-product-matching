@@ -37,7 +37,7 @@ class TextDataset(Dataset):
 
     def __getitem__(self, index):
         text = self.li[index]
-        text = self.to(
+        text = self.tokenizer(
             text,
             padding="max_length",
             truncation=True,

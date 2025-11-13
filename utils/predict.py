@@ -1,6 +1,6 @@
 import torch
 import numpy as np
-from code_base.utils import CFG
+from main_folder.code_base.utils import CFG
 import torch.nn.functional as F
 from functools import reduce
 from utils.knn import get_matches, th_matches

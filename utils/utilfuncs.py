@@ -1,9 +1,9 @@
 import torch
 from pp.albu import transform
-from code_base.utils import CFG
+from main_folder.code_base.utils import CFG
 from torch.utils.data import DataLoader
 from utils.dataset import ImageDataset, TextDataset
-from code_base.pipeline import ImgEncoder, TextEncoder
+from main_folder.code_base.pipeline import ImgEncoder, TextEncoder
 
 def gen_data(li,
                  lt,

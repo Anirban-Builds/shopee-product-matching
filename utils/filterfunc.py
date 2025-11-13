@@ -44,13 +44,13 @@ def match_measures(m1, m2):
 
 def filter_match_titles(matches : list, title_list): # filter matches override
     for i in range(len(matches)):
-        item_title = extract(title_list[i])
+        item_title = extract(title_list)
         l=[]
         for match in matches[i]:
             if match == i:
                 l.append(i)
                 continue
-            match_title = extract(title_list[match])
+            match_title = extract(title_list)
             if (match_measures(item_title, match_title)):
                 l.append(match)
         matches[i] = l

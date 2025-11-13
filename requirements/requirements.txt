@@ -1,0 +1,16 @@
+albumentations
+black
+numpy
+pre-commit
+timm
+torch
+torchsummary
+scikit-learn
+nltk
+unidecode
+transformers
+fastapi
+uvicorn[standard]
+faiss-cpu
+gradio
+huggingface_hub
