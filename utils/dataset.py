@@ -30,7 +30,7 @@ class ImageDataset(Dataset):
 class TextDataset(Dataset):
     def __init__(self, li, tokenizer=None):
         self.li = li
-        self.to = AutoTokenizer.from_pretrained(tokenizer)
+        self.tokenizer = AutoTokenizer.from_pretrained(tokenizer)
 
     def __len__(self):
         return len(self.li)
