@@ -35,7 +35,7 @@ async def predict_image(files: List[UploadFile] = File(...),
                     TKN_PATH=TKN_PATH,
                     BATCH_SIZE=BATCH_SIZE
                     )
-    msg = "products matched" if res else "products not matched"
+    msg = "Products matched ✅" if res else "Products not matched 👎🏻"
 
     return {"message" : f"{msg}"}
 
